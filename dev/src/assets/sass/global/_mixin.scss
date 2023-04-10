@@ -1,0 +1,37 @@
+@use "./variables" as global;
+
+// ---
+// メディアクエリー
+// ---
+@mixin mq($breakpoint: sp) {
+	@media #{map-get(global.$breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+/* remの計算 */
+$baseFontSize: 16;
+@function rem($pixels) {
+  @return $pixels / $baseFontSize * 1rem;
+}
+
+// アニメーション初期値
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}

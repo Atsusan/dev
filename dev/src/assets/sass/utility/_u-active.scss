@@ -1,0 +1,31 @@
+@use '../global' as global;
+
+// ---
+// 表示
+// ---
+.u-active-pc {
+	// PC時に表示
+    display: none;
+
+	@include global.mq("pc") {
+        display: block;
+	}
+}
+
+.u-active-tab {
+	//タブレット以下表示
+    display: none;
+
+	@include global.mq("tab") {
+        display: block;
+	}
+}
+
+.u-active-sp {
+	// スマホ時に表示
+    display: none;
+
+	@include global.mq("sp") {
+        display: block;
+	}
+}
