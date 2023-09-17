@@ -9,12 +9,6 @@
 	}
 }
 
-/* remの計算 */
-$baseFontSize: 16;
-@function rem($pixels) {
-  @return $pixels / $baseFontSize * 1rem;
-}
-
 // アニメーション初期値
 @mixin animation(
   $name,
