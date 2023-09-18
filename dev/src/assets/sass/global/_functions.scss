@@ -5,3 +5,8 @@ $baseFontSize: 16;
 @function rem($pixels) {
     @return math.div($pixels, $baseFontSize) * 1rem;
 }
+
+// vwの計算
+@function vw($pixels, $vSize) {
+    @return math.div($pixels, $vSize) * 100vw;
+}
