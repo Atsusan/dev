@@ -18,15 +18,36 @@ $lh-base: 1.6; // ベース行間
 $inner-width: 1100px; // インナー幅サイズ
 $sp-width: 768px; // スマホサイズ
 
+// // ブレークポイント
+// $breakpoints: (
+//   // スマホ以下の場合
+//   "sp": "screen and (max-width: #{$sp-width - 1px})",
+//   // タブレット以下の場合
+//   "tab": "screen and (max-width: #{$inner-width - 1px})",
+//   // タブレット以上の場合
+//   "pc": "screen and (min-width: #{$inner-width})"
+// );
+
 // ブレークポイント
 $breakpoints: (
   // スマホ以下の場合
   "sp": "screen and (max-width: #{$sp-width - 1px})",
+  "hover": "screen and (max-width: #{$sp-width + 1px})",
   // タブレット以下の場合
   "tab": "screen and (max-width: #{$inner-width - 1px})",
   // タブレット以上の場合
-  "pc": "screen and (min-width: #{$inner-width})"
+  "pc": "screen and (min-width: #{$inner-width})",
+  // 補助
+  "mobile": "screen and (max-width: 400px)",
+  "mobileLL": "screen and (max-width: 600px)",
+  "tabletM": "screen and (max-width: 960px)",
+  "tabletL": "screen and (max-width: 1024px)",
+  "tabletLL": "screen and (max-width: 1080px)",
+  "note": "screen and (max-width: 1280px)",
+  "desktopS": "screen and (max-width: 1440px)",
+  "desktopM": "screen and (max-width: 1560px)"
 );
+
 
 // 重なり順の定義
 $layer: (
