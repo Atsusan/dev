@@ -1,5 +1,9 @@
 @use "../global" as g;
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     color: g.$text-color;
     font-family: g.$ff-base;

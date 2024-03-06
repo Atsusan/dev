@@ -1,10 +1,11 @@
 @use "sass:math";
 
 // /* remの計算 */
-$baseFontSize: 16;
-@function rem($pixels) {
-    @return math.div($pixels, $baseFontSize) * 1rem;
-}
+// html 62.5% の指定に変更するためコメントアウト
+// $baseFontSize: 16;
+// @function rem($pixels) {
+//     @return math.div($pixels, $baseFontSize) * 1rem;
+// }
 
 // vwの計算
 @function vw($pixels, $vSize) {
