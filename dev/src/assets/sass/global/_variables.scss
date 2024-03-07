@@ -22,7 +22,7 @@ $sp-width: 768px; // スマホサイズ
 $breakpoints: (
   // スマホ以下の場合
   "sp": "screen and (max-width: #{$sp-width - 1px})",
-  "hover": "screen and (max-width: #{$sp-width + 1px})",
+  "hover": "screen and (min-width: #{$sp-width + 1px})",
   // タブレット以下の場合
   "tab": "screen and (max-width: #{$inner-width - 1px})",
   // タブレット以上の場合
