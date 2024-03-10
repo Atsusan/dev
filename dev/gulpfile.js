@@ -30,8 +30,8 @@ function watch(done) {
   gulp.watch("./src/assets/sass/**/*.scss", gulp.series(compileSass, browserReload));
   gulp.watch("./src/assets/js/**/*.js", gulp.series(minJS, browserReload));
   gulp.watch("./src/assets/**/*", gulp.series(copyImage, browserReload));
-  gulp.watch("./src/**/*.html", gulp.series(formatHTML, browserReload));
-  gulp.watch("../public/**/*.php", browserReload);
+  gulp.watch("./src/**/*.html", gulp.series(formatHTML, browserReload)); // php 開発時にはこちらをコメントアウトする
+  // gulp.watch("../public/**/*.php", browserReload); // php開発時にコメントアウトを外す
   done();
 }
 
