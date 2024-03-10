@@ -1,15 +1,15 @@
 // 色
-$main-color: #3A65A9; // メインカラー
-$accent-color: #FACB52; // アクセントカラー
+$main-color: #3a65a9; // メインカラー
+$accent-color: #facb52; // アクセントカラー
 $accent-color-active: #00aca0; // アクセントカラー（アクティブ）
-$text-color: #2F2E2E; // テキストカラー
-$link-btn-color: #285DB1; // リンクボタンカラー
-$cGray: #EFF0F5; // グレー
+$text-color: #2f2e2e; // テキストカラー
+$link-btn-color: #285db1; // リンクボタンカラー
+$cGray: #eff0f5; // グレー
 
 // フォント
 $ff-awesome: "Font Awesome 5 Free", sans-serif; // Font Awesome
-$ff-en: 'Helvetica Neue','Roboto', sans-serif; // 英字
-$ff-base: 'Noto Sans JP', "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; // 日本語標準
+$ff-en: "Helvetica Neue", "Roboto", sans-serif; // 英字
+$ff-base: "Noto Sans JP", "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; // 日本語標準
 $fz-base: 16px; // ベースフォントサイズ
 $fw-base: 500; // ベースフォントウェイト
 $lh-base: 1.6; // ベース行間

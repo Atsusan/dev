@@ -1,0 +1,26 @@
+/* animation
+----------------------------------------------------------------- */
+
+.animeFadeInUp {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(25px);
+    transition: all 1.2s;
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+
+.animeFadeIn {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.2s;
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}

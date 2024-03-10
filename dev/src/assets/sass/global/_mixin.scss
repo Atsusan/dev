@@ -4,28 +4,28 @@
 // メディアクエリー
 // ---
 @mixin mq($breakpoint: sp) {
-    @media #{map-get(v.$breakpoints, $breakpoint)} {
-        @content;
-    }
+  @media #{map-get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
 }
 
 // アニメーション初期値
 @mixin animation(
-    $name,
-    $duration: 1s,
-    $timing-function: ease,
-    $delay: 0s,
-    $iteration-count: 1,
-    $direction: normal,
-    $fill-mode: forwards
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
 ) {
-    animation: {
-        name: $name;
-        duration: $duration;
-        timing-function: $timing-function;
-        delay: $delay;
-        iteration-count: $iteration-count;
-        direction: $direction;
-        fill-mode: $fill-mode;
-    }
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
 }
