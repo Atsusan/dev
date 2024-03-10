@@ -5,41 +5,42 @@
 .u-dispNone {
   &--NU {
     display: block;
-    @include g.note {
+    @include g.mq(note) {
       display: none;
     }
   }
 
   &--NO {
     display: none;
-    @include g.note {
+    @include g.mq(note) {
       display: block;
     }
   }
+
   &--PU {
     display: block;
-    @include g.tabletS {
+    @include g.mq(sp) {
       display: none;
     }
   }
 
   &--PO {
     display: none;
-    @include g.tabletS {
+    @include g.mq(sp) {
       display: block;
     }
   }
 
   &--flexPU {
     display: flex;
-    @include g.tabletS {
+    @include g.mq(sp) {
       display: none;
     }
   }
 
   &--flexPO {
     display: none;
-    @include g.tabletS {
+    @include g.mq(sp) {
       display: flex;
     }
   }
