@@ -1,7 +1,7 @@
 @use "sass:math";
 
 // /* remの計算 */
-// html 62.5% の指定に変更するためコメントアウト
+// html font-size: 100%; の指定の際はこちらを使う
 // $baseFontSize: 16;
 // @function rem($pixels) {
 //     @return math.div($pixels, $baseFontSize) * 1rem;
